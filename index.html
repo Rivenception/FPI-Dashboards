@@ -33,24 +33,35 @@
           </div>
         </div>
         <div class="card col-md-5" style="width: auto; margin: 20px;">
-          <img src="./img/eng-dash.JPG" class="card-img-top" alt="PM Dashbaord">
+          <img src="./img/eng-dash.JPG" class="card-img-top" alt="Eng Dashbaord">
           <div class="card-body">
             <h5 class="card-title">Engineering Dashboard</h5>
             <p class="card-text">Dashboard provides data for estimated capacity as well as direct work priority list for engineers.</p>
           </div>
           <div class="card-body">
-            <button type="button" onclick="engdash()" class="btn btn-secondary" id="pm-dash" >Engineering Dashboard
+            <button type="button" onclick="engdash()" class="btn btn-secondary" id="eng-dash" >Engineering Dashboard
             </button>
           </div>
         </div>
         <div class="card col-md-5" style="width: auto; margin: 20px;">
-          <img src="./img/sales-dash.JPG" class="card-img-top" alt="PM Dashbaord">
+          <img src="./img/sales-dash.JPG" class="card-img-top" alt="Sales Dashbaord">
           <div class="card-body">
             <h5 class="card-title">Sales Dashboard</h5>
             <p class="card-text">Dashboard reviews programs on hold and out for quote.</p>
           </div>
           <div class="card-body">
-            <button type="button" onclick="salesdash()" class="btn btn-secondary" id="pm-dash" >Sales Dashboard
+            <button type="button" onclick="salesdash()" class="btn btn-secondary" id="sales-dash" >Sales Dashboard
+            </button>
+          </div>
+        </div>
+        <div class="card col-md-5" style="width: auto; margin: 20px;">
+          <img src="./img/ecr-mgr-dash.JPG" class="card-img-top" alt="ECR KPI Dashbaord">
+          <div class="card-body">
+            <h5 class="card-title">KPI ECR Manager Dashboard</h5>
+            <p class="card-text">Dashboard for reviewing top level ECR data.</p>
+          </div>
+          <div class="card-body">
+            <button type="button" onclick="ecrmgrdash()" class="btn btn-secondary" id="ecr-mgr-dash" >KPI: ECR Management Dashboard
             </button>
           </div>
         </div>
@@ -72,6 +83,12 @@
       function salesdash(){
         setTimeout(function(){
           window.location.href="https://rivenception.github.io/FPI-Dashboards/sales";
+        }, 1000);
+      };
+
+      function ecrmgrdash(){
+        setTimeout(function(){
+          window.location.href="https://rivenception.github.io/FPI-Dashboards/kpi-ecr";
         }, 1000);
       };
     </script>

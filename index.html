@@ -55,13 +55,24 @@
           </div>
         </div>
         <div class="card col-md-5" style="width: auto; margin: 20px;">
-          <img src="./img/ecr-mgr-dash.JPG" class="card-img-top" alt="ECR KPI Dashbaord">
+          <img src="./img/kpi-ecr-dash.JPG" class="card-img-top" alt="ECR KPI Dashbaord">
           <div class="card-body">
-            <h5 class="card-title">KPI ECR Manager Dashboard</h5>
+            <h5 class="card-title">KPI: ECR Manager Dashboard</h5>
             <p class="card-text">Dashboard for reviewing top level ECR data.</p>
           </div>
           <div class="card-body">
-            <button type="button" onclick="ecrmgrdash()" class="btn btn-secondary" id="ecr-mgr-dash" >KPI: ECR Management Dashboard
+            <button type="button" onclick="kpiecrdash()" class="btn btn-secondary" id="ecr-mgr-dash" >KPI: ECR Management Dashboard
+            </button>
+          </div>
+        </div>
+        <div class="card col-md-5" style="width: auto; margin: 20px;">
+          <img src="./img/kpi-pm-dash.JPG" class="card-img-top" alt="ECR KPI Dashbaord">
+          <div class="card-body">
+            <h5 class="card-title">KPI: Program Management Dashboard</h5>
+            <p class="card-text">Dashboard for reviewing top level PM data.</p>
+          </div>
+          <div class="card-body">
+            <button type="button" onclick="kpipmdash()" class="btn btn-secondary" id="pm-mgr-dash" >KPI: Program Management Dashboard
             </button>
           </div>
         </div>
@@ -86,9 +97,15 @@
         }, 1000);
       };
 
-      function ecrmgrdash(){
+      function kpiecrdash(){
         setTimeout(function(){
           window.location.href="https://rivenception.github.io/FPI-Dashboards/kpi-ecr";
+        }, 1000);
+      };
+
+      function kpipmdash(){
+        setTimeout(function(){
+          window.location.href="https://rivenception.github.io/FPI-Dashboards/kpi-pm";
         }, 1000);
       };
     </script>
